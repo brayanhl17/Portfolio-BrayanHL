@@ -1,0 +1,37 @@
+---
+import ProjectCard from '@components/ProjectCard.astro'
+import Typescript from '@assets/icons/typescript.astro';
+import React from '@assets/icons/react.astro';
+import Net from '@assets/icons/net.astro';
+import Tailwind from '@assets/icons/tailwind.astro';
+---
+
+<section class="my-20">
+  <h2 class="text-2xl font-semibold mb-2">Proyectos</h2>
+  <hr class="mb-6 border-zinc-600">
+
+  <ProjectCard projectTitle="Neovim" projectDescription="Vim-fork focused on extensibility and usability" projectLink="https://neovim.io" image="/images/neovim.webp">
+    <React />
+    <Net />
+    <Tailwind />
+    <Typescript />
+  </ProjectCard>
+
+  <ProjectCard projectTitle="React" projectDescription="API REST utilizando .NET 8 que contempla un modelo de personas con los métodos  HTTP (GET, POST, PUT y DELETE) con Swagger para la documentación de la API." projectLink="https://react.dev/" image="/src/assets/images/captura.PNG">
+    <React />
+    <Net />
+    <Tailwind />
+  </ProjectCard>
+
+  <ProjectCard projectTitle="React" projectDescription="The library for web and native user interfaces." projectLink="https://react.dev/" image="/images/react.webp">
+    <React />
+    <Net />
+    <Tailwind />
+  </ProjectCard>
+
+  <ProjectCard projectTitle="React" projectDescription="The library for web and native user interfaces." projectLink="https://react.dev/" image="/images/react.webp">
+    <React />
+    <Net />
+    <Tailwind />
+  </ProjectCard>
+</section>
