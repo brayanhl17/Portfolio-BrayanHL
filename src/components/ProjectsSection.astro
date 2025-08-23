@@ -3,7 +3,11 @@ import ProjectCard from '@components/ProjectCard.astro'
 import Typescript from '@assets/icons/typescript.astro';
 import React from '@assets/icons/react.astro';
 import Net from '@assets/icons/net.astro';
+import Javascript from '@assets/icons/javascript.astro';
+import Html from '@assets/icons/html.astro';
+import Css from '@assets/icons/css.astro';
 import Tailwind from '@assets/icons/tailwind.astro';
+import Bootstrap from '@assets/icons/bootstrap.astro';
 ---
 
 <section class="my-20">
@@ -23,15 +27,14 @@ import Tailwind from '@assets/icons/tailwind.astro';
     <Tailwind />
   </ProjectCard>
 
-  <ProjectCard projectTitle="React" projectDescription="The library for web and native user interfaces." projectLink="https://react.dev/" image="/images/react.webp">
-    <React />
-    <Net />
-    <Tailwind />
+  <ProjectCard projectTitle="Tiermaker" projectDescription="Este proyecto sirve para crear tier lists utilizando drag & drop y con Vanilla Javscript únicamente. Permite añadir imágenes seleccionandolas o arrastrándolas, recargar y guardar la tier list en una imagen." projectLink="https://brayanhl17.github.io/Tiermaker" image="/public/images/Tiermaker.png">
+    <Html/>
+    <Javascript />
+    <Css />
   </ProjectCard>
 
-  <ProjectCard projectTitle="React" projectDescription="The library for web and native user interfaces." projectLink="https://react.dev/" image="/images/react.webp">
-    <React />
+  <ProjectCard projectTitle="Pasarela de pago" projectDescription="Pasarela de pago donde se realiza la integración de Mercado Pago Checkout API en una aplicación de .NET 8 utilizando ASP.NET Core." projectLink="https://github.com/brayanhl17/PasarelaMercadoPago" image="/public/images/Pasarela.png">
     <Net />
-    <Tailwind />
-  </ProjectCard>
+    <Bootstrap />
+  </ProjectCard> 
 </section>
