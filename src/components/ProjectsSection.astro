@@ -1,40 +1,45 @@
 ---
 import ProjectCard from '@components/ProjectCard.astro'
-import Typescript from '@assets/icons/typescript.astro';
-import React from '@assets/icons/react.astro';
+import Aspnet from '@assets/icons/aspnet.astro';
 import Net from '@assets/icons/net.astro';
 import Javascript from '@assets/icons/javascript.astro';
 import Html from '@assets/icons/html.astro';
 import Css from '@assets/icons/css.astro';
-import Tailwind from '@assets/icons/tailwind.astro';
+import Angular from '@assets/icons/angular.astro';
 import Bootstrap from '@assets/icons/bootstrap.astro';
+import Blazor from '@assets/icons/blazor.astro';
+import Sqlserver from '@assets/icons/sqlserver.astro';
+import Csharp from '@assets/icons/csharp.astro';
 ---
 
 <section class="my-20">
   <h2 class="text-2xl font-semibold mb-2">Proyectos</h2>
   <hr class="mb-6 border-zinc-600">
 
-  <ProjectCard projectTitle="Neovim" projectDescription="Vim-fork focused on extensibility and usability" projectLink="https://neovim.io" image="/images/neovim.webp">
-    <React />
+  <ProjectCard projectTitle="Sistema de Biblioteca" projectDescription="Sistema para gestión de biblioteca escolar que permite administrar estudiantes, préstamos y libros. Utiliza Entity Framework, .NET 9 y Blazor Server." projectLink="https://github.com/brayanhl17/BibliotecaMVP" image="/images/Biblioteca.png">
+    <Blazor />
     <Net />
-    <Tailwind />
-    <Typescript />
+    <Csharp/>
+    <Html/>
+    <Css />
   </ProjectCard>
 
-  <ProjectCard projectTitle="React" projectDescription="API REST utilizando .NET 8 que contempla un modelo de personas con los métodos  HTTP (GET, POST, PUT y DELETE) con Swagger para la documentación de la API." projectLink="https://react.dev/" image="/public/captura.PNG">
-    <React />
+  <ProjectCard projectTitle="Login con JWT" projectDescription="Login desarrollado con ANgular 17 que consume API creada con .NET 8 que perimite ingresar o registrar usuario implementando Jason Web Token para añadir mayor seguridad." projectLink="https://github.com/brayanhl17/Login-JWT" image="/images/Jwt.png">
+    <Angular />
     <Net />
-    <Tailwind />
+    <Sqlserver />
   </ProjectCard>
 
-  <ProjectCard projectTitle="Tiermaker" projectDescription="Este proyecto sirve para crear tier lists utilizando drag & drop y con Vanilla Javscript únicamente. Permite añadir imágenes seleccionandolas o arrastrándolas, recargar y guardar la tier list en una imagen." projectLink="https://brayanhl17.github.io/Tiermaker" image="/public/images/Tiermaker.png">
+  <ProjectCard projectTitle="Tiermaker" projectDescription="Web para crear tier lists utilizando drag & drop y con Vanilla Javscript únicamente. Permite añadir imágenes seleccionandolas o arrastrándolas, recargar y guardar la tier list en una imagen." projectLink="https://brayanhl17.github.io/Tiermaker" image="/images/Tiermaker.png">
     <Html/>
     <Javascript />
     <Css />
   </ProjectCard>
 
-  <ProjectCard projectTitle="Pasarela de pago" projectDescription="Pasarela de pago donde se realiza la integración de Mercado Pago Checkout API en una aplicación de .NET 8 utilizando ASP.NET Core." projectLink="https://github.com/brayanhl17/PasarelaMercadoPago" image="/public/images/Pasarela.png">
+  <ProjectCard projectTitle="Pasarela de pago" projectDescription="Pasarela de pago donde se realiza la integración de Mercado Pago Checkout API en una aplicación de .NET 8 utilizando ASP.NET Core." projectLink="https://github.com/brayanhl17/PasarelaMercadoPago" image="/images/Pasarela.png">
     <Net />
     <Bootstrap />
+    <Sqlserver />
+    <Aspnet />
   </ProjectCard> 
 </section>
